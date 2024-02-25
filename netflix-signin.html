@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+   
+</head>
+<body>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+     <div class="login-top">
+     <img src="public/images/Netflix-logo.png" alt="">
+    </div>     
+    <div class="d-flex justify-content-center align-items-center"></div>
+    <section class="login-box">
+        <h1 class="text-white">Sign In</h1>
+        <form class="mt-4">
+            <div class="mb-3 rounded px-2 width-100%">
+                <input type="text" id="UserName" class="text-gray" placeholder="Email or phone number" required>
+                <div>
+                    <input type="text" id="Password" class="text-gray" placeholder="Password" required>
+                </div>
+                <div>
+                    <button onclick="submit()" class="btn btn-danger">Sign In</button>
+                </div>
+            </div>
+            <div class="d-inline">
+            <p> New to Netflix?</p><a class="text-white" href="#"> Sign up now</a></p>
+            <p>This page is protected by Google reCAPTCHA to ensure you're not a bot.<a href="#">Learn more.</a></p>
+        </form>
+</body>
+</html>

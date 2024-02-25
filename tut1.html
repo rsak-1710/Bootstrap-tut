@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+   
+    
+   <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+    </style>
+    <script>
+        function submit()
+        {
+            let Email=document.getElementById("UserName").value;
+            let Password=document.getElementById("Password").value;
+            if(Email=="sakaramruchitha@gmail.com"){
+                if(Password=="sakaram")
+                {
+                    window.open("quick-book.html")
+                }
+                else{
+                    alert("Enter correct password")
+                }
+            
+            }
+            else{
+                alert("Enter correct Email")
+            }
+
+            
+        }
+    </script>
+</head>
+<body>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <div class="login"></div>
+        <h1>Sign In</h1>
+        <input type="text" id="UserName" placeholder="Email or phone number" required>
+        <input type="text" id="Password" placeholder="Password" required>
+        <button onclick="submit()" class="btn btn-danger">Sign In</button>
+        <div class="register">
+           <p> New to Netflix?
+            <a href="#"> Sign up now</a></p>
+            <p>This page is protected by Google reCAPTCHA to ensure you're not a bot.<a href="#">Learn more.</a></p>
+        </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.386),rgba(20, 2, 2, 0.501)),url(public/images/netflix-signin.jpeg);
+    height: 100vh;
+
+}
+.login-top{
+    padding: 0px 20px;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    
+   
+}
+.login-top img{
+    width: 200px;
+}
+.login-box{
+    background-color: rgba(0, 0, 0, 0.814);
+    width: 450px;
+    height: 650px;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 40px;
+    border-radius: 5px;
+    padding: 50px;
+}

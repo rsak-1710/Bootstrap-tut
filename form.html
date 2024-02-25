@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <script>
+        function add(){
+            let toDo=document.getElementById("task").value;
+            let list=document.getElementById("list");
+            if(toDo=="")
+            {
+                alert("please add task")
+            }
+            else{
+                let li=document.createElement("li")
+                li.innerHTML=toDo;
+                list.appendChild(li);
+                document.getElementById("task").value="";
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Complete tasks</h1>
+    <div>
+        <input type="text" id="task"> 
+        <button onclick="add()">add</button>
+        <ul id="list">
+
+        </ul>
+    </div>
+</body>
+</html>

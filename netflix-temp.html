@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+<style>
+   
+    .container-fluid {
+    width: 750px;
+}
+    section{
+        height: 696px;
+        width: 659px;
+        background-color: aqua;
+    }
+    header{
+        height: 114px;
+        width: 659px;
+        background-color: bisque;
+        display: flex;
+    }
+    .sec-main{
+
+    }
+    .cal-side{
+        display: flex;
+    }
+      
+    
+
+</style>
+<body>
+    <main class="container-fluid">
+        <section >
+             <header>
+                 <div class="weigh-mach"><img src="public/images/weigh-mach.svg"></div>
+                 <div>
+                    <span class="text-danger"><h1>BMI Calculator</h1></span>
+                    <span class="text-danger"><h3>Body Mass Index</h3></span>
+                 </div>
+              </header>
+              <div class="sec-main">
+                <div class="cal">
+                   <div class="cal-side">
+                    <div class="ms-3 fw-bold">GENDER</div>
+                    <div class=" mb-3">
+                        <button class="btn btn-outline-secondary" type="button">Ma</button>
+                        <button class="btn btn-outline-secondary" type="button">Button</button>
+                      </div>
+                      
+                    <div class="ms-3 fw-bold">AGE</div>
+                    <div><input type="number" pattern="\d[0-9]{1}" placeholder="years"></div>
+                   </div>
+                   <div class="cal-side">
+                    <div class="ms-3 fw-bold">HEIGHT</div>
+                    <div><input type="number" pattern=".[0-9]{1}" placeholder="years"></div>
+                    <div class="ms-3 fw-bold">WEIGHT</div>
+                   </div>
+                   
+
+                  
+
+                </div>
+                <div class="result">
+
+                </div>
+              </div>
+        </section>
+    </main>
+
+    
+    </div>
+</body>
+</html>
